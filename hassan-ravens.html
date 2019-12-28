@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header
+        header {
+          background-color:DodgerBlue;
+          padding: 30px;
+          text-align: center;
+          font-size: 35px;
+          color: white;
+        } */
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 20%;
+          height: 200px; /* only for demonstration, should be removed */
+          /* background: #ccc; */
+          padding: 20px;
+          font-size: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        /* nav ol {
+          list-style-type: ol;
+          padding: 30p;
+          color: green;
+        } */
+        
+        article {
+          float: left;
+          padding: 30px;
+          width: 80%;
+          /* background-color: #f1f1f1; */
+          height: 200px; /* only for demonstration, should be removed */
+          font-size: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        section:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color:grey;
+          padding: 10px;
+          text-align: right;
+          color: white;
+          font-size: 20px;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        /* @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          } */
+        </style>
+<body>
+    <div style="background-color:DeepSkyBlue "; class="row">
+        <div style="text-align: center"><br><b><font size="16">Raven's web page!</font></b></div>
+        <div style="color:red; text-align: center"><b><font size="5">A happy, happy coding team.</font></div></b></br>
+    </div>
+    <section>
+            <nav>
+            <div><font size="6"><b>Topics</font></b></div>
+            <!-- <h1 style="strong">Topics</h1> -->
+              <ol style="color:black">
+                <li><b><span style="color:green">Home</span></b></li>
+                <li><span style="color:green">About</span></li>
+                <li><span style="color:green">Contact</span></li>
+              </ol>
+            </nav>
+            
+            <article>
+              <p>Measuring programming progress by lines of code is like measuring aircraft 
+              building progress by weight. – Bill Gates (co-founder of Microsoft)</p>
+              <p>Writing the first 90 percent of a computer program takes 90 percent of the time. The remaining ten percent also takes 90 percent of the time and the final touches also take 90 percent of the time. – N.J. Rubenking </p>
+            </article>
+          </section>
+    <footer>
+        <div><a href="url">Copyright © Raven's team!</a></div>
+    </footer>      
+</body>
+</html>
